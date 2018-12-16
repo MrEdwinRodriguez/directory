@@ -1,0 +1,28 @@
+
+
+#loginBox{   
+    margin: auto;
+    margin-top: 90px;
+    width: 80%;
+    border: 3px solid #034f84;
+    padding: 10px;
+    text-align: center;
+    background-color: #92a8d1;
+    color: white;
+    font-family: Candara;
+    font-size: 18px;
+    
+}
+
+h1{
+    color: royalblue;
+    font-family: cursive;
+    padding-bottom: 10px;
+}
+
+.forgot {
+    text-align: left; 
+    margin-bottom:30px;
+ 
+
+  }

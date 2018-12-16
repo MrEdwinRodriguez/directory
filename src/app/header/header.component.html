@@ -13,10 +13,10 @@
             </li>
             
             <li class="nav-item" *ngIf="!isLoggedIn">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#" (click)="onSelect('login')">Login</a>
             </li>
             <li class="nav-item" *ngIf="!isLoggedIn">
-                <a class="nav-link" href="#">Create Account</a>
+                <a class="nav-link" href="#" (click)="onSelect('create-account')">Create Account</a>
             </li>
             <li class="nav-item" *ngIf="isLoggedIn">
                 <a class="nav-link" href="#">Logout</a>

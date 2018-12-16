@@ -1,3 +1,8 @@
-<app-header></app-header>
-<app-create-account></app-create-account>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+{{testFeature}}
+
+
+<app-login *ngIf="loadedFeature === 'login'"></app-login>
+<app-create-account *ngIf="loadedFeature === 'create-account'"></app-create-account>
+
 
