@@ -3,7 +3,7 @@
 #loginBox{   
     margin: auto;
     margin-top: 90px;
-    width: 80%;
+    width: 50%;
     border: 3px solid #034f84;
     padding: 10px;
     text-align: center;
@@ -21,7 +21,7 @@ h1{
 }
 
 .forgot {
-    text-align: left; 
+    /* text-align: left;  */
     margin-bottom:30px;
  
 

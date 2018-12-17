@@ -2,6 +2,7 @@
 {{testFeature}}
 
 
+<app-profile *ngIf="loadedFeature === '1login'"></app-profile>
 <app-login *ngIf="loadedFeature === 'login'"></app-login>
 <app-create-account *ngIf="loadedFeature === 'create-account'"></app-create-account>
 
