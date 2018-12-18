@@ -1,4 +1,6 @@
-<div class="container">
+<app-edit-profile *ngIf="editProfile"></app-edit-profile>
+
+<div class="container" *ngIf="!editProfile">
 
   <h1 style="text-align: center;">Bill Gates</h1>
   <div style="text-align: center;">
