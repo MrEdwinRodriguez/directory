@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { NetworkComponent } from './network/network.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EditProfileComponent } from './profile/edit-profile/edit-profile.compon
     LoginComponent,
     CreateAccountComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    NetworkComponent
   ],
   imports: [
     BrowserModule

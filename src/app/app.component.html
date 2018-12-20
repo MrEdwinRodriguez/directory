@@ -1,8 +1,8 @@
 <app-header (featureSelected)="onNavigate($event)"></app-header>
-{{testFeature}}
 
 
-<app-profile *ngIf="loadedFeature === '1login'"></app-profile>
+<app-network *ngIf="loadedFeature === 'network'"></app-network>
+<app-profile *ngIf="loadedFeature === 'profile'"></app-profile>
 <app-login *ngIf="loadedFeature === 'login'"></app-login>
 <app-create-account *ngIf="loadedFeature === 'create-account'"></app-create-account>
 

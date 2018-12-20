@@ -6,9 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  editProfile = true;
+  editProfile = false;
 
   constructor() { }
+  
+  onSelectProfile(feature: string){
+
+    if(this.editProfile){
+      this.editProfile = false;  
+    }else{
+      this.editProfile = true;
+    }
+    
+  }
+
 
   ngOnInit() {
   }
