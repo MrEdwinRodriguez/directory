@@ -13,35 +13,35 @@
 
     <tr>
       <th width="20%">Name:</th>
-      <td width="80%">Bill Gates</td>
+      <td width="80%">{{currentProfile.name}}</td>
     </tr>
     <tr>
       <th>Telephone:</th>
-      <td>55577854</td>
+      <td>5{{currentProfile.telephone}}</td>
     </tr>
     <tr>
       <th>Email:</th>
-      <td>test@aol.com</td>
+      <td>{{currentProfile.email}}</td>
     </tr>
     <tr>
       <th>Orginization:</th>
-      <td>Phi Beta Sigma</td>
+      <td>{{currentProfile.orginization}}</td>
     </tr>
     <tr>
       <th>Chapter:</th>
-      <td>Iota Rho</td>
+      <td>{{currentProfile.chapter}}</td>
     </tr>
     <tr>
       <th>Current Occupation:</th>
-      <td>Web Developer</td>
+      <td>{{currentProfile.occupation}}</td>
     </tr>
     <tr>
       <th>Industry:</th>
-      <td>Web Development</td>
+      <td>{{currentProfile.industry}}</td>
     </tr>
     <tr>
       <th>Location:</th>
-      <td>Orlando</td>
+      <td>{{currentProfile.location}}</td>
     </tr>
     <tr>
         <th>Can I hire:</th>
@@ -49,35 +49,27 @@
       </tr>
       <tr>
         <th>People I know That can hire:</th>
-        <td>Spouse</td>
+        <td>{{currentProfile.whoiknow}}</td>
       </tr>
       <tr>
         <th>Do I know about raising money:</th>
         <td>no</td>
       </tr>
       <tr>
-        <th>Orginization:</th>
-        <td>Phi Beta Sigma</td>
-      </tr>
-      <tr>
-        <th>Chapter:</th>
-        <td>Iota Rho</td>
-      </tr>
-      <tr>
-        <th>Current Occupation:</th>
-        <td>Web Developer</td>
-      </tr>
-      <tr>
           <th>Business</th>
-          <td>My Company</td>
+          <td>{{currentProfile.businessname}}</td>
       </tr>
       <tr>
         <th>Company Website</th>
-        <td>www.mycompany.com</td>
+        <td>{{currentProfile.businesswebsite}}</td>
+      </tr>
+      <tr>
+        <th>Company Desctiption</th>
+        <td>{{currentProfile.businessdescription}}</td>
       </tr>
       <tr>
         <th>More info:</th>
-        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
+        <td>{{currentProfile.info}}</td>
       </tr>
   </table>
 
