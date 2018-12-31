@@ -2,28 +2,28 @@
   <!--##################START HERE#####################-->
 
   <!-- FORM -->
-  <form>
+  <form (submit)="onCreateProfile(createProfileForm)" #createProfileForm="ngForm">
       <!-- TEXT FIELD GROUPS -->
       <div class="form-group">
           <label for="name">Name</label>
-          <input class="form-control" type="text" name="name" placeholder="Enter name">
+          <input class="form-control" type="text" name="name" placeholder="Enter name" ngModel>
       </div>
       <div class="form-group">
           <label for="email">Email address</label>
-          <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter email">
+          <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter email" ngModel>
       </div>
       <div class="form-group">
           <label for="password" >Password</label>
-          <input class="form-control" type="password" name="password" placeholder="Password">
+          <input class="form-control" type="password" name="password" placeholder="Password" ngModel>
       </div>
       <div class="form-group">
         <label for="password">Confirm Password</label>
-        <input class="form-control" type="password" name="passwordConfirm" placeholder="Password" >
+        <input class="form-control" type="password" name="passwordConfirm" placeholder="Password" ngModel>
     </div>
       
       <div class="form-group">
           <label for="gender">Orginization</label>
-          <select class="form-control" name="orginization">
+          <select class="form-control" name="orginization" ngModel>
                 <option>-----------</option>
               <option>Phi Beta Sigma</option>
               <option>Zeta Phi Beta</option>
@@ -31,7 +31,7 @@
       </div>
       <div class="form-group">
         <label for="gender">Chapter</label>
-        <select class="form-control" name="chapter">
+        <select class="form-control" name="chapter" ngModel>
             <option>-----------</option>
             <option>Sigma Epsilon</option>
             <option>Epsilon Zeta</option>
