@@ -1,30 +1,30 @@
 <div class="container">
     
-    <form>
+    <form (submit)="onSaveProfile(saveProfileForm)" #saveProfileForm="ngForm">
         <!-- TEXT FIELD GROUPS -->
         <div class="form-group">
             <label for="name">Name</label>
-            <input class="form-control" type="text" id="name" value="{{currentProfile.name}}">
+            <input class="form-control" type="text" name="name" ngModel value="{{currentProfile.name}}" required>
         </div>
         <div class="form-group">
             <label for="email">Email address</label>
-            <input class="form-control form-control-lg" type="email" id="email" value="{{currentProfile.email}}">
+            <input class="form-control form-control-lg" type="email" name="email" ngModel value="{{currentProfile.email}}" required>
             <small class="form-text text-muted">Your email will not ever be shared</small>
         </div>
         <div class="form-group">
             <label for="telephone">Telephone Number</label>
-            <input class="form-control form-control-sm" type="text" id="telephone" value="{{currentProfile.telephone}}">
+            <input class="form-control form-control-sm" type="text" name="telephone" ngModel value="{{currentProfile.telephone}}" required>
         </div>
         <div class="form-group">
             <label for="orginization">Orginization</label>
-            <select class="form-control" id="orginization" value="Zeta Phi Beta">
+            <select class="form-control" name="orginization" ngModel value="Zeta Phi Beta" required>
                 <option>Phi Beta Sigma</option>
                 <option>Zeta Phi Beta</option>
             </select>
         </div>
         <div class="form-group">
             <label for="chapter">Chapter Pledged</label>
-            <select class="form-control" id="chapter">
+            <select class="form-control" name="chapter" ngModel required>
                 <option>Iota Rho</option>
                 <option>Gamma Delta Sigma</option>
                 <option>Sigma Epsilon</option>
@@ -33,56 +33,56 @@
         </div>
         <div class="form-group">
             <label for="occupation">Current Occupation</label>
-            <input class="form-control" type="text" id="occupation" value="{{currentProfile.occupation}}">
+            <input class="form-control" type="text" name="occupation" ngModel value="{{currentProfile.occupation}}">
         </div>
         <div class="form-group">
             <label for="industry">Industry</label>
-            <input class="form-control" type="text" id="industry" value="{{currentProfile.industry}}">
+            <input class="form-control" type="text" name="industry" ngModel value="{{currentProfile.industry}}">
         </div>
         <div class="form-group">
             <label for="location">Location</label>
-            <input class="form-control" type="text" id="location" value="{{currentProfile.location}}">
+            <input class="form-control" type="text" name="location" ngModel value="{{currentProfile.location}}">
         </div>
         <div class="form-group">
             <label for="hiringPower">Can I Hire</label>
-            <select class="form-control" id="hiringPower">
+            <select class="form-control" name="hiringPower" ngModel>
                 <option>Yes</option>
                 <option>No</option>
             </select>
         </div>
         <div class="form-group">
             <label for="whoIKnow">Who Do I know that can hire?</label>
-            <input class="form-control" type="text" id="whoIKnow" value="{{currentProfile.whoiknow}}">
+            <input class="form-control" type="text" name="whoIKnow" ngModel value="{{currentProfile.whoiknow}}">
         </div>
         <div class="form-group">
             <label for="raisingMoneyr">Do I Know About Raising Money?</label>
-            <select class="form-control" id="raisingMoney">
+            <select class="form-control" name="raisingMoney" ngModel>
                 <option>Yes</option>
                 <option>No</option>
             </select>
         </div>
         <div class="form-group">
             <label for="business">Do you have a Business?</label>
-            <input class="form-control" type="text" id="business" value="{{currentProfile.businessname}}" >
+            <input class="form-control" type="text" name="business" ngModel value="{{currentProfile.businessname}}" >
         </div>
         <div class="form-group">
             <label for="businessDescription">Business Description</label>
-            <input class="form-control" type="text" id="businessDescription" value="{{currentProfile.businessdescription}}">
+            <input class="form-control" type="text" name="businessDescription" ngModel value="{{currentProfile.businessdescription}}">
         </div>
         <div class="form-group">
             <label for="businessWebsite">Business Website</label>
-            <input class="form-control" type="text" id="businessWebsite" value="{{currentProfile.businesswebsite}}">
+            <input class="form-control" type="text" name="businessWebsite" ngModel value="{{currentProfile.businesswebsite}}">
         </div>
     
         <!-- TEXTAREA -->
         <div class="form-group">
             <label for="message">Info</label>
-            <textarea class="form-control" id="message" rows="5" value="{{currentProfile.info}}"></textarea>
+            <textarea class="form-control" name="message" rows="5" ngModel value="{{currentProfile.info}}"></textarea>
         </div>
         <!-- FILE INPUT -->
         <div class="form-group">
             <label for="file">Profile Picture</label>
-            <input type="file" id="file" class="form-control-file">
+            <input type="file" name="file" ngModel class="form-control-file">
             <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
         </div> 
 
