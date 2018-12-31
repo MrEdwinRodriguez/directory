@@ -5,7 +5,7 @@
 <div class="container" *ngIf="!editProfile">
     <button class="btn btn-primary" (click)="onSelectProfile('update')">Update Profile</button>
 
-  <h1 style="text-align: center;">Bill Gates</h1>
+  <h1 style="text-align: center;">{{currentProfile.name}}</h1>
   <div style="text-align: center;">
       <img src="../assets/images/handshake.jpeg" alt="260x180" style="width: 260px; height: 180px;">
   </div>
