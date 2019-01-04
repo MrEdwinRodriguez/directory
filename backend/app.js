@@ -2,13 +2,27 @@ const express = require('express');
 
 const app = express();
 
-app.use((req, res, next) => {
-    console.log('first middleware')
-    next();
-});
+app.use('/api/profiles',(req, res, next) => {
+    const profiles = {
+        name: 'p9TUDa3gig2auGW',
+        email: 'mredwinrodriguez@gmail.com',
+        telephone: '407-342-1232',
+        occupation: 'Engineer',
+        industry: 'HVAC',
+        location: "sanford",
+        orginization: "Phi Beta Sigma",
+        chapter: 'Iota Rhos',
+        whoiknow: 'wife',
+        businessname: 'ICS',
+        businesswebsite: 'www.ics.com',
+        businessdescription: 'Staffing',
+        info: 'I can help people deeloper website.'
+    }
 
-app.use((req, res, next) => {
-    res.send('hello from express!')
+    res.status(200).json({
+        message: 'success profile',
+        profiles: profiles
+    });
 });
 
 module.exports = app;
