@@ -10,6 +10,7 @@ import { NgForm } from '@angular/forms';
 export class EditProfileComponent implements OnInit {
 
   currentProfile : Profile = {
+    id: null,
     name: "Edwin Rodriguez",
     email: 'edwin@aol.com',
     telephone: '407-956-4837',
@@ -31,6 +32,7 @@ export class EditProfileComponent implements OnInit {
     //   return;
     // }
     const profile: Profile ={
+      id: null,
       name: form.value.title,
       email: form.value.email,
       telephone: form.value.telephone,

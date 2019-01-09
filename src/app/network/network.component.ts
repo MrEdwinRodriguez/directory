@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NetworkService } from './network.service';
 
 @Component({
   selector: 'app-network',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NetworkComponent implements OnInit {
 
-  constructor() { }
+  network = []
+
+  constructor(public networkService: NetworkService) { }
 
   ngOnInit() {
+    this.network = this.networkService.getNetworks()
   }
 
 }
