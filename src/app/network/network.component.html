@@ -13,7 +13,21 @@
     <th>Willing to Mentor</th>
     <th>Contact</th>
   </tr>
-  <tr>
+  
+    <tr *ngFor="let network of networks">
+    <td>{{network.name}}</td>
+    <td>{{network.orginization}}</td>
+    <td> {{network.occupation}}</td>
+    <td> {{network.major}}</td>
+    <td>{{network.industry}}</td>
+    <td> {{network.location}}</td>
+    <td> {{network.canIHelp}}</td>
+    <td> {{network.canIHire}}</td>
+    <td>{{network.willingToMentor}}</td>
+    <td>X</td>
+  </tr>
+
+  <!-- <tr>
     <td>Brian Jenkins</td>
     <td>Phi Beta Sigma / Iota Rho</td>
     <td>Event Planner</td>
@@ -36,7 +50,7 @@
     <td>Yes</td>
     <td>Yes</td>
     <td>X</td>
-  </tr>
+  </tr> -->
 
 
 </table>

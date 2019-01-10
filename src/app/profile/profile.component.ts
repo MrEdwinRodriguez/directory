@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit{
+// export class ProfileComponent implements OnInit{
+export class ProfileComponent{
   // currentProfile = [] 
   currentProfile : Profile = {
     id: null,
@@ -32,7 +33,7 @@ export class ProfileComponent implements OnInit{
 
   editProfile = false;
 
-  constructor(public profileServie: ProfileService){}
+  // constructor(public profileServie: ProfileService){}
   // constructor(private http: HttpClient) {}
 
   // getMyProfile(){

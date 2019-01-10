@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NetworkService } from './network.service';
 
 @Component({
@@ -8,12 +8,16 @@ import { NetworkService } from './network.service';
 })
 export class NetworkComponent implements OnInit {
 
-  network = []
+  // networks = [{name: "Brian Jenkins", orginization: "Phi Beta Sigma", chapter: "Iota Rho", occupation: 'Event Planning', major: "Event Planning", industry: 'Events', location:"Spain", canIHelp: "no", canIHire: 'no', willingToMentor: 'yes'},
+  // {name: "Matt Shaw", orginization: "Phi Beta Sigma", chapter: "Iota Rho", occupation: 'Business Owner', major: "Marketing", industry: 'Sales', location:"Orlando", canIHelp: "yes", canIHire: 'yes', willingToMentor: 'yes'}]
+
+  @Input() networks = [];
 
   constructor(public networkService: NetworkService) { }
 
   ngOnInit() {
-    this.network = this.networkService.getNetworks()
+    this.networks = this.networkService.getNetworks()
+
   }
 
 }
