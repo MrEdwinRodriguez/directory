@@ -8,16 +8,16 @@ import { NetworkService } from './network.service';
 })
 export class NetworkComponent implements OnInit {
 
-  // networks = [{name: "Brian Jenkins", orginization: "Phi Beta Sigma", chapter: "Iota Rho", occupation: 'Event Planning', major: "Event Planning", industry: 'Events', location:"Spain", canIHelp: "no", canIHire: 'no', willingToMentor: 'yes'},
-  // {name: "Matt Shaw", orginization: "Phi Beta Sigma", chapter: "Iota Rho", occupation: 'Business Owner', major: "Marketing", industry: 'Sales', location:"Orlando", canIHelp: "yes", canIHire: 'yes', willingToMentor: 'yes'}]
-
   @Input() networks = [];
+  testing = []
 
   constructor(public networkService: NetworkService) { }
 
+
   ngOnInit() {
-    this.networks = this.networkService.getNetworks()
-
-  }
-
+    this.networkService
+      .getNetworks()
+      .subscribe(networks => this.networks = networks.profiles);   // Subscribe and Initialize the networks variable
+    console.log(networks)
+    }
 }
